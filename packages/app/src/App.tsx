@@ -40,16 +40,16 @@ import { SignInPage } from '@backstage/core-components';
 
 const avalibleSignInProviders: SignInProviderConfig[] = [
   {
-    id: 'dex',
-    title: 'Dex',
-    message: 'Sign in using Dex',
-    apiRef: oidcAuthApiRef,
-  },
-  {
     id: 'github-auth-provider',
     title: 'GitHub',
     message: 'Sign in using GitHub',
     apiRef: githubAuthApiRef,
+  },
+  {
+    id: 'dex',
+    title: 'Dex',
+    message: 'Sign in using Dex',
+    apiRef: oidcAuthApiRef,
   }
 ] 
 
