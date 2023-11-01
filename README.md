@@ -8,3 +8,9 @@ To start the app, run:
 yarn install
 yarn dev
 ```
+
+Set environment variables from `.env` file
+
+```
+$ export $(sed 's/#.*//g' .env | xargs)
+```
