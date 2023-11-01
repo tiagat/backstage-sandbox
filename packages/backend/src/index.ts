@@ -32,6 +32,14 @@ import { PluginEnvironment } from './types';
 import { ServerPermissionClient } from '@backstage/plugin-permission-node';
 import { DefaultIdentityClient } from '@backstage/plugin-auth-node';
 
+import { config as dotenv } from 'dotenv-safe';
+
+dotenv({
+  allowEmptyValues: true,
+  path: '../../.env',
+  example: '../../.env.example',
+});
+
 function makeCreateEnv(config: Config) {
   const root = getRootLogger();
   const reader = UrlReaders.default({ logger: root, config });
