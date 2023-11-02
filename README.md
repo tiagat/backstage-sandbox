@@ -14,3 +14,7 @@ Set environment variables from `.env` file
 ```
 $ export $(sed 's/#.*//g' .env | xargs)
 ```
+
+```
+$ kubectl config --kubeconfig=~/.kube/dev.rnd-ops.goreel.tech.config get pods
+```
