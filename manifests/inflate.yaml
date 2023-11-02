@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: inflate
   labels:
-    backstage.io/kubernetes-id: docker-desktop
+    backstage.io/kubernetes-id: rnd-ops.goreel.tech
 spec:
   replicas: 0
   selector:
@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: inflate
-        backstage.io/kubernetes-id: docker-desktop
+        backstage.io/kubernetes-id: rnd-ops.goreel.tech
     spec:
       terminationGracePeriodSeconds: 0
       containers:

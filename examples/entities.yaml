@@ -45,7 +45,7 @@ kind: Component
 metadata:
   name: inflate
   annotations:
-    backstage.io/kubernetes-id: docker-desktop
+    backstage.io/kubernetes-id: rnd-ops.goreel.tech
 spec:
   lifecycle: production
   owner: guests
