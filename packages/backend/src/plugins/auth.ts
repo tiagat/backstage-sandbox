@@ -58,9 +58,10 @@ export default async function createPlugin(
       dex: providers.oidc.create({
         signIn: {
           resolver(info, ctx) {
+            const email = info.result.userinfo.email;
             const userRef = stringifyEntityRef({
               kind: 'User',
-              name: info.result.userinfo.sub,
+              name: email || info.result.userinfo.sub,
               namespace: DEFAULT_NAMESPACE,
             });
             return ctx.issueToken({
