@@ -123,6 +123,12 @@ kubernetes:
   clusterLocatorMethods:
     - type: "config"
       clusters:
+        # - url: https://127.0.0.1:6443
+        #   name: rnd-ops.goreel.tech
+        #   authProvider: "serviceAccount"
+        #   serviceAccountToken: eyJhbGciOiJSUzI1NiIsImtpZCI6InFWYUY2cjBoSE91QU1TZEVOZEotNjF0U2ZMQzU2aU9Zd212NWFmd0dwNG8ifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImJhY2tzdGFnZSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJiYWNrc3RhZ2UiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJmOThlYWE0MS0wZjgxLTQwMjEtYTk0Ny1lZmNlNDhjYTQxZjIiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6ZGVmYXVsdDpiYWNrc3RhZ2UifQ.VwF22Q7oHvxBT5EtMxYjv0TuGWg71h2ZEAQyj4ATGGRocInUpJuw5uBM6N4UR8WbUwA8CSMwNrKmREIxZslVaXiYgugnDsIoVU_ihNco4hG9w9CY0WX-YLMmYKo0EjQuWMsTnXiiELxD7XHMe1oBb-PbWnpdiX5p2V5jNO0xHPxYvimGmySCffxOgq-MGaTfmY9qvVnLNXjc2zLYjWKOuCbYlaeOL9ySFXUGfjqb2c4klaPszeEnQTjCco93c5dEIgu36On02ANHPOAxfeIq0zHBf_d63_X0yCwNokGUTqJDsveK_Km7piyWQOlJoxDc5GdrtJJkjC6WenUrVmh0AQ
+        #   skipTLSVerify: true
+        #   skipMetricsLookup: true
         - url: https://api.rnd-ops.goreel.tech
           name: rnd-ops.goreel.tech
           authProvider: oidc
